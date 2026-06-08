@@ -12,7 +12,7 @@ Assistente técnico em português para responder perguntas sobre a LGPD com base
 
 **Live demo:** pronta para deploy no Streamlit Cloud
 
-Link vídeo no Youtube: [![Assistente LGPD com RAG e tool de citacao](https://youtube.com)]()
+Link vídeo no Youtube: [![Assistente LGPD com RAG e tool de citacao](https://youtube.com)](https://youtu.be/ImcrGssK8iY)
 
 
 ## My Aplication 

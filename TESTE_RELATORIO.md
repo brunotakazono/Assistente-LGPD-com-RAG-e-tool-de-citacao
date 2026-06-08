@@ -7,7 +7,7 @@
 
 ---
 
-## 📊 Resumo Executivo
+## Resumo Executivo
 
 | Teste | Título | Status | Tempo (ms) | Observação |
 |-------|--------|--------|-----------|------------|
@@ -21,7 +21,7 @@
 
 ---
 
-## 🎯 Detalhes dos Testes
+##  Detalhes dos Testes
 
 ### Teste 1: Citação Determinística ✗ FALHA
 **Tempo**: T=1:10 do script  
@@ -35,10 +35,10 @@ Resposta: "Nao encontrado no corpus [lgpd.md:p1]"
 ```
 
 **Análise**:
-- ❌ Art. 18 não foi encontrado no corpus
+-  Art. 18 não foi encontrado no corpus
 - ✓ RAG funcionou corretamente (recuperou corpus)
 - ✓ Indicou que não estava no corpus (esperado para dado fora do escopo)
-- ⚠️ Esperava que o art. 18 estivesse no corpus LGPD
+-  Esperava que o art. 18 estivesse no corpus LGPD
 
 **Impacto**: Possível que o corpus não inclua o art. 18 explicitamente ou que o RAG precise de ajuste nas queries semânticas.
 
@@ -137,7 +137,7 @@ Out of Scope: true
 
 ---
 
-## 📈 Métricas de Desempenho
+##  Métricas de Desempenho
 
 ```
 ┌─ LATÊNCIA ─────────────────────────────────────────┐
@@ -166,7 +166,7 @@ Out of Scope: true
 
 ---
 
-## 🔧 Configuração Utilizada
+##  Configuração Utilizada
 
 - **Python**: 3.13
 - **Streamlit**: 1.30+
@@ -213,7 +213,7 @@ Out of Scope: true
 
 ---
 
-## ⚠️ Limitações Encontradas
+##  Limitações Encontradas
 
 1. **Art. 18 não encontrado**: O corpus pode não incluir o art. 18 explicitamente ou precisa de query reformulação
 2. **Semantic cache não usado**: Nestes testes apenas exact cache foi ativado (esperado)
@@ -222,7 +222,7 @@ Out of Scope: true
 
 ---
 
-## 🚀 Próximos Passos Recomendados
+##  Próximos Passos Recomendados
 
 1. **Verificar corpus**: Confirmar se art. 18 está incluído em `data/corpus/lgpd.md`
 2. **Query refinement**: Testar queries alternativas para art. específicos
@@ -232,7 +232,7 @@ Out of Scope: true
 
 ---
 
-## 📝 Conclusão
+##  Conclusão
 
 ✓ **Sistema funciona conforme especificado**. O pipeline RAG com caching duplo (exact + semantic) está operacional e pronto para demo. A observabilidade está integrada e métricas são capturadas corretamente.
 
@@ -242,7 +242,7 @@ Out of Scope: true
 
 ---
 
-## 📎 Artefatos
+##  Artefatos
 
 - **Script de teste**: `tests/teste_pratico.py`
 - **Resultados JSON**: `TESTE_RESULTADOS.json`

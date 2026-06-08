@@ -5,7 +5,7 @@
 
 ---
 
-## 🎯 Testes Executados
+##  Testes Executados
 
 ### Teste 1: Citação Determinística (T=1:10 do script)
 **Pergunta**: "O que diz o art. 18?"
@@ -69,19 +69,19 @@
 
 ---
 
-## 📊 Resumo de Evidências
+##  Resumo de Evidências
 
 | Teste | Pergunta | Status | Cache | Latência | Fontes |
 |-------|----------|--------|-------|----------|--------|
-| 1 | O que diz o art. 18? | ⏳ | ❌ → ✅ (2ª) | - | 1 |
-| 2 | Deveres do controlador? | ⏳ | - | - | N/A |
-| 3 | Repetir art. 18 | ⏳ | ✅ hit | < 100ms | 1 |
-| 4 | Observabilidade | ⏳ | - | - | - |
-| 5 | Fora do escopo | ⏳ | - | - | 0 |
+| 1 | O que diz o art. 18? |  |  →  (2ª) | - | 1 |
+| 2 | Deveres do controlador? |  | - | - | N/A |
+| 3 | Repetir art. 18 |  |  hit | < 100ms | 1 |
+| 4 | Observabilidade |  | - | - | - |
+| 5 | Fora do escopo |  | - | - | 0 |
 
 ---
 
-## 🔧 Configuração Utilizada
+##  Configuração Utilizada
 
 - **Python**: 3.10+
 - **Streamlit**: 1.30+
@@ -92,12 +92,12 @@
 
 ---
 
-## 📝 Notas do Teste
+##  Notas do Teste
 
 (Preenchidas durante execução)
 
 ---
 
-## ✅ Conclusão
+##  Conclusão
 
 (Preenchida ao fim dos testes)
