@@ -67,7 +67,7 @@ uv run streamlit run src/ui/streamlit_app.py
 
 Para o Streamlit Cloud, conecte o repositório, selecione `src/ui/streamlit_app.py` como entrypoint e configure os segredos do app com `GROQ_API_KEY`. Se quiser embeddings remotos, adicione também a chave escolhida e altere `EMBED_PROVIDER`.
 
- ![Image](https://github.com/user-attachments/assets/1aca0ca0-c72a-43f0-ab6a-b564ca4b9e56)  
+ ![Image](https://github.com/user-attachments/assets/ba83f522-6f8f-4115-88fd-a30c720dda14)  
  
  _DEPLOY REALIZADO: Testando a aplicação do assistente LGPD com RAG e tool de citação_  
 
