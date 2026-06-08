@@ -67,6 +67,14 @@ uv run streamlit run src/ui/streamlit_app.py
 
 Para o Streamlit Cloud, conecte o repositório, selecione `src/ui/streamlit_app.py` como entrypoint e configure os segredos do app com `GROQ_API_KEY`. Se quiser embeddings remotos, adicione também a chave escolhida e altere `EMBED_PROVIDER`.
 
+ ![Image](https://github.com/user-attachments/assets/1aca0ca0-c72a-43f0-ab6a-b564ca4b9e56)  
+ 
+ _DEPLOY REALIZADO: Testando a aplicação do assistente LGPD com RAG e tool de citação_  
+
+ Link para acessar e testar a aplicação: <https://assistente-lgpd-com-rag-e-tool-de-citacao-8ewfwxsayp7h5wbra7nh.streamlit.app/>
+
+
+
 ## Benchmark
 
 O script `scripts/benchmark.py` mede latência fim a fim, hit-rate de cache e distribuição de routing. Rode depois de configurar a chave e o corpus:
