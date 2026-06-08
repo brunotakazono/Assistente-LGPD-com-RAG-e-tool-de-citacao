@@ -1,6 +1,6 @@
-# 📋 Guia de Reprodução - Testes Práticos LGPD RAG
+#  Guia de Reprodução - Testes Práticos LGPD RAG
 
-## 🚀 Quick Start - Reproduzir os Testes
+##  Quick Start - Reproduzir os Testes
 
 ### 1. Ativar Virtual Environment
 
@@ -28,7 +28,7 @@ cat TESTE_RELATORIO.md     # Relatório completo em Markdown
 
 ---
 
-## 🌐 Iniciar Interface Streamlit
+##  Iniciar Interface Streamlit
 
 ### Option A: Local (desenvolvimento)
 
@@ -47,7 +47,7 @@ Acessa em: http://localhost:8501
 
 ---
 
-## 📊 Resultados dos Testes Executados
+##  Resultados dos Testes Executados
 
 ### Ambiente
 - **Data**: 2026-06-08 03:12 UTC
@@ -59,11 +59,11 @@ Acessa em: http://localhost:8501
 
 | # | Teste | Status | Tempo | Detalhes |
 |---|-------|--------|-------|----------|
-| 1 | Citação Determinística | ❌ FALHA | 2,527ms | Art. 18 em chunk não prioritário |
-| 2 | RAG com Fontes | ✅ SUCESSO | 1,117ms | 5 fontes recuperadas |
-| 3 | Cache Exato | ✅ SUCESSO | 0.01ms | 200x mais rápido que RAG |
-| 4 | Observabilidade | ✅ SUCESSO | - | 28 chunks, 2 em cache |
-| 5 | Edge Case (out-of-scope) | ✅ SUCESSO | 384ms | Corretamente rejeita |
+| 1 | Citação Determinística |  FALHA | 2,527ms | Art. 18 em chunk não prioritário |
+| 2 | RAG com Fontes |  SUCESSO | 1,117ms | 5 fontes recuperadas |
+| 3 | Cache Exato |  SUCESSO | 0.01ms | 200x mais rápido que RAG |
+| 4 | Observabilidade |  SUCESSO | - | 28 chunks, 2 em cache |
+| 5 | Edge Case (out-of-scope) |  SUCESSO | 384ms | Corretamente rejeita |
 
 ---
 
@@ -93,7 +93,7 @@ $ python -c "...retrieve('O que diz o art. 18', k=10)..."
 
 ---
 
-## 🧪 Reproduzir Teste 1 com Variações
+##  Reproduzir Teste 1 com Variações
 
 ```bash
 python -c "
@@ -119,7 +119,7 @@ for q in queries:
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 .
@@ -149,7 +149,7 @@ for q in queries:
 
 ---
 
-## 🔑 Configuração .env
+##  Configuração .env
 
 Copiar de `.env.example` e preencher UMA das opções:
 
@@ -171,7 +171,7 @@ EMBED_MODEL_LOCAL=all-MiniLM-L6-v2
 
 ---
 
-## 📈 Métricas Capturadas
+##  Métricas Capturadas
 
 Cada teste deixa traces estruturados:
 
@@ -196,7 +196,7 @@ Use para:
 
 ---
 
-## 🎬 Passo-a-Passo para Apresentação (5min)
+##  Passo-a-Passo para Apresentação (5min)
 
 Siga o script em `docs/ROTEIRO_APRESENTACAO.md`:
 
@@ -213,7 +213,7 @@ Siga o script em `docs/ROTEIRO_APRESENTACAO.md`:
 
 ---
 
-## ✅ Checklist Pré-Apresentação
+##  Checklist Pré-Apresentação
 
 - [ ] `.env` configurado com chave válida
 - [ ] `data/corpus/lgpd.md` presente (18KB)
@@ -226,7 +226,7 @@ Siga o script em `docs/ROTEIRO_APRESENTACAO.md`:
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### "ModuleNotFoundError: No module named 'src'"
 ```bash
@@ -258,7 +258,7 @@ python tests/teste_pratico.py  # Executa 2x para ver cache em ação
 
 ---
 
-## 📞 Suporte
+##  Suporte
 
 Para questões sobre:
 - **RAG Pipeline**: ver `src/pipeline/rag.py`
