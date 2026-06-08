@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-06-08T03:12:00.346515",
+  "tests": [
+    {
+      "numero": 1,
+      "titulo": "Citação Determinística",
+      "pergunta": "O que diz o art. 18?",
+      "cache_status": "miss",
+      "resposta_length": 37,
+      "sucesso": false
+    },
+    {
+      "numero": 2,
+      "titulo": "RAG com Fontes",
+      "pergunta": "Quais são os deveres do controlador segundo a LGPD?",
+      "cache_status": "miss",
+      "resposta_length": 1002,
+      "fontes_count": 5,
+      "sucesso": true
+    },
+    {
+      "numero": 3,
+      "titulo": "Cache Exato em Ação",
+      "pergunta": "O que diz o art. 18?",
+      "cache_status": "exact_hit",
+      "latencia_ms": 0.012636184692382812,
+      "sucesso": true
+    },
+    {
+      "numero": 4,
+      "titulo": "Observabilidade e Métricas",
+      "chunks_indexados": 28,
+      "exact_cache_size": 2,
+      "semantic_cache_size": 0,
+      "sucesso": true
+    },
+    {
+      "numero": 5,
+      "titulo": "Pergunta fora do escopo",
+      "pergunta": "Qual é a capital do Brasil?",
+      "cache_status": "miss",
+      "resposta_length": 37,
+      "out_of_scope": true,
+      "sucesso": true
+    }
+  ],
+  "metrics": {
+    "chunks_indexed": 28,
+    "exact_cache_stats": {
+      "size": 2
+    },
+    "semantic_cache_stats": {
+      "size": 0,
+      "threshold": 0.93
+    }
+  }
+}
