@@ -8,7 +8,18 @@
 
 Assistente técnico em português para responder perguntas sobre a LGPD com base em corpus local, citação de artigos e cache para reduzir custo e latência.
 
+
+
 **Live demo:** pronta para deploy no Streamlit Cloud
+
+Link vídeo no Youtube: [![Assistente LGPD com RAG e tool de citacao](https://youtube.com)]()
+
+
+## My Aplication 
+ ![Image](https://github.com/user-attachments/assets/1aca0ca0-c72a-43f0-ab6a-b564ca4b9e56)  
+ 
+ _Testando a aplicação do assistente LGPD com RAG e tool de citação_  
+ 
 
 ## Problem statement
 
