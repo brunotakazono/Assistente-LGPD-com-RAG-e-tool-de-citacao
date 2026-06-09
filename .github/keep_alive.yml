@@ -1,0 +1,18 @@
+name: Manter App Streamlit Acordado
+
+on:
+  schedule:
+    - cron: '0 */10 * * *'
+jobs:
+  keep_alive:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+      
+    - name: Commit Vazio para Resetar o Streamlit
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git commit --allow-empty -m "Ping automático para manter o Streamlit acordado"
+        git push
