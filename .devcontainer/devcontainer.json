@@ -1,7 +1,7 @@
 {
-  "name": "Python 3",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "name": "Assistente LGPD Dev",
   "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bookworm",
+  
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -10,24 +10,31 @@
       ]
     },
     "vscode": {
-      "settings": {},
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        "python.terminal.useEnvFile": true,
+        "terminal.integrated.env.linux": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      },
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "tamasfe.even-better-toml"
       ]
     }
   },
-  "updateContentCommand": "[ -f packages.txt ] && sudo apt update && sudo apt upgrade -y && sudo xargs apt install -y <packages.txt; [ -f requirements.txt ] && pip3 install --user -r requirements.txt; pip3 install --user streamlit; echo '✅ Packages installed and Requirements met'",
-  "postAttachCommand": {
-    "server": "streamlit run src/ui/streamlit_app.py --server.enableCORS false --server.enableXsrfProtection false"
-  },
+
+  "forwardPorts": [8501],
   "portsAttributes": {
     "8501": {
-      "label": "Application",
-      "onAutoForward": "openPreview"
+      "label": "Streamlit App",
+      "onAutoForward": "notify"
     }
   },
-  "forwardPorts": [
-    8501
-  ]
+
+  "postCreateCommand": "pip install uv && uv venv .venv --clear && uv pip install -r requirements.txt torchvision nest_asyncio streamlit",
+  
+  "postAttachCommand": "echo 'Ambiente configurado! Lembre-se de ativar o ambiente virtual executando: source .venv/bin/activate'"
 }

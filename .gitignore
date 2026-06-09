@@ -7,10 +7,12 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 
+
 # Dados e cache
 data/chroma/
 data/cache/
 *.log
+*.egg-info/
 
 # Eval results — descomente para versionar
 # evals/results-*.json
