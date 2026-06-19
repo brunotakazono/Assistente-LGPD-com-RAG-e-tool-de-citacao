@@ -1,0 +1,13 @@
+name: Manter Portfolio LGPD Acordado
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Acessar a aplicação para evitar suspensão
+        run: curl -sL https://assistente-lgpd-com-rag-e-tool-de-citacao-1cz4tewftws.streamlit.app > /dev/null
