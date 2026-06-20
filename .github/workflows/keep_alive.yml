@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Acessar a aplicação para evitar suspensão
-        run: curl -sL https://assistente-lgpd-com-rag-e-tool-de-citacao-1cz4tewftws.streamlit.app > /dev/null
+        run: curl -sL https://assistente-lgpd-com-rag-e-tool-de-citacao-1cz4tewftws.streamlit.app/ > /dev/null
