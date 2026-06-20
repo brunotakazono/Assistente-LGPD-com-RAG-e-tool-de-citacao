@@ -10,4 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Acessar a aplicação para evitar suspensão
+        continue-on-error: true
         run: curl --max-redirs 10 -fL https://assistente-lgpd-com-rag-e-tool-de-citacao-1cz4tewftws.streamlit.app/ -o /dev/null
